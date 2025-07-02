@@ -2,7 +2,7 @@ class Solution {
     public int minCost(String colors, int[] neededTime) {
         int time = 0;
         int l =0;
-        for(int r = 1;r<colors.length();r++)
+        for(int r = 1;r<neededTime.length;r++)
         {
             if(colors.charAt(r)== colors.charAt(l))
             {
@@ -16,7 +16,7 @@ class Solution {
                 }
             }
             else{
-                l =r;
+                l++;
             }
         }
         return time;
