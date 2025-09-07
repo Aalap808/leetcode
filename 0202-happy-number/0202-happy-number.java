@@ -9,7 +9,7 @@ class Solution {
         while(n!=0)
         {
             int d = n % 10;
-            sum = sum+ d*d;
+            sum +=d*d;
             n = n/10;
         }
         n = sum;
@@ -25,11 +25,6 @@ class Solution {
              return false;
         }
          used.add(n);
-
-
-
-
-
        }
         
         
